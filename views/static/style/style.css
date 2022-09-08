@@ -1,0 +1,370 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #f6f2f2 !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.wrapper {
+    max-width: 350px;
+    min-height: 500px;
+    margin: 80px auto;
+    padding: 40px 30px 30px 30px;
+    background-color: #ecf0f3;
+    border-radius: 15px;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+}
+
+.logo {
+    width: 80px;
+    margin: auto;
+}
+
+.logo img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px #5f5f5f,
+        0px 0px 0px 5px #ecf0f3,
+        8px 8px 15px #a7aaa7,
+        -8px -8px 15px #fff;
+}
+
+.wrapper .name {
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1.3px;
+    padding-left: 10px;
+    color: #555;
+}
+
+.wrapper .form-field input {
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.2rem;
+    color: #666;
+    padding: 10px 15px 10px 10px;
+    border: 1px solid red; 
+}
+
+.wrapper .form-field {
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+.wrapper .form-field .fas {
+    color: #555;
+}
+
+.wrapper .btn {
+    box-shadow: none;
+    width: 100%;
+    height: 40px;
+    background-color: #03A9F4;
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px #b1b1b1,
+        -3px -3px 3px #fff;
+    letter-spacing: 1.3px;
+}
+
+.wrapper .btn:hover {
+    background-color: #039BE5;
+}
+
+.wrapper a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #03A9F4;
+}
+
+.wrapper a:hover {
+    color: #039BE5;
+}
+
+@media(max-width: 380px) {
+    .wrapper {
+        margin: 30px 20px;
+        padding: 40px 15px 15px 15px;
+    }
+}
+
+header, .navbar {
+    background-color: #fff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+#logo {
+    width: 40px;
+    margin-left: 40px;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: black;
+}
+.navbar-brand:hover {
+    color: black;
+}
+.nav-item {
+    cursor: pointer;
+}
+#navbar-links a {
+    color: #333232;
+    font-weight: 400;
+    font-size: 19px;
+}
+#navbar-links a:hover {
+    color: #0B222E;
+    transition: 200ms;
+}
+#gestao-menu {
+    opacity: 0.95;
+}
+#analise-menu {
+    opacity: 0.85;
+}
+#dev-menu {
+    opacity: 0.75;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem 1.9rem;
+}
+
+.text-button{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.text-button:hover{
+    color: #0B222E;
+}
+
+ 
+.fundo-azul {
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    background: #0B222E;
+}
+
+/* 
+#logo2-img {
+    position: relative;
+    width: 100%;
+} */
+
+
+#painel-branco {
+    width: 50%;
+    height: 75%;
+    background: #FFFFFF;
+    box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.FilterButton {
+    background-color: #e8e8e8 !important;
+    border: 0px !important;
+    color: #7d7d7d !important;
+    border-radius: 15px !important;
+    width: 100%;
+    height: 100%;
+}
+
+.GridPainel {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    padding: 2.4rem;
+} 
+
+.texto-card {
+    text-decoration: none; 
+    color: #0B222E;
+}
+
+#btnMaisInformacoes
+{
+    color: #fff;
+    background-color: #0B222E;
+}
+#btnMaisInformacoes:hover
+{
+    color: #0B222E;
+    background-color: #fff;
+}
+
+#btnBuscar {
+    width: 100%;
+}
+
+.card:hover {
+    color: #FFF;
+    background-color: #0B222E;    
+    transform: scale(1.03);
+    transition: 0.5s all;
+}
+
+.bloco-branco{
+    background-color: #ffffff;
+    border-radius: 0.7rem;
+    opacity: 90%;
+    height: 270px;
+    box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.whatsapp {
+    position: absolute;
+    top: 65%;
+    left: 20%;
+}
+.instagram {
+    position: absolute;
+    top: 75%;
+    left: 20%;
+}
+
+#lblDadosWPP {
+    position: absolute;
+    top: 65%;
+    left: 32%;
+}
+#lblDadosIG {
+    position: absolute;
+    top: 79%;
+    left: 32%;
+}
+.vagas-bloco{
+    position: relative;
+    top: 18px;
+    left: 60%;
+}
+.area-bloco{
+    position: relative;
+    top: -35px;
+    left: 25%;
+}
+
+.bloquinho{
+    background-color: #0B222E;
+    opacity: 90%;
+    border-radius: 0.1rem;
+}
+
+.bloquinho:hover{
+    background-color: #676767;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.container-carousel {
+    position: relative;
+    padding: 15px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+.gallery-wrapper {
+    overflow-x: auto;
+  }
+  
+  .arrow-left,
+  .arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 20px;
+    line-height: 250px;
+    width: 500px;
+    color: #fff;
+    transition: all 600ms ease-in-out;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.01;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .arrow-left:hover,
+  .arrow-right:hover {
+    opacity: 1;
+  }
+  
+  .arrow-right {
+    right: 0;
+    left: auto;
+    text-align: right;
+    background: linear-gradient(to right, transparent 50%, black 200%);
+  }
+  
+  .gallery {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  
+  .item {
+    width: 30rem;
+    height: 25rem;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 0.5;
+  }
+  
+  .current-item {
+    opacity: 1;
+  }
+  
+  /* This is from w3schools */
+  /* 
+  https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .gallery-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .gallery-wrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  @media (max-width: 600px)
+  {
+    #lblDados
+     {
+      visibility: hidden;
+     }
+  }
+
+  .anuncio-card {
+    background-color: #fff;
+    color: #0B222E;
+    border-radius: 3%;
+  }

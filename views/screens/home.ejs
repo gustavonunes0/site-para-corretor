@@ -1,0 +1,316 @@
+<%- include ('./../elements/header.ejs') %>
+
+    <body>
+        <%- include ('./../elements/navbar.ejs') %>
+            <div class="fundo-azul img-fluid" id="inicio">  
+                <div class="container-fluid center-me">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-2"
+                            style="color: #FFF; font-size: 20px; font-family: 'Lucida Sans'; font-weight: 100;">Encontre
+                            seu imóvel
+                            <img src="/assets/lupa.svg" width="20" height="20">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="p-3 col-md-6 bg-light rounded-4">
+                            <div class="container-fluid py-2">
+                                <div class="row py-1 d-flex justify-content-around">
+                                    <div class="col-md-4 mb-2">
+                                        <button class="btn btn-secondary dropdown-toggle FilterButton" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">tipo do imóvel</button>
+                                    </div>
+                                    <div class="col-md-4 mb-2">
+                                        <button class="btn btn-secondary dropdown-toggle FilterButton" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">cidade</button>
+                                    </div>
+                                    <div class="col-md-4 mb-2">
+                                        <button class="btn btn-secondary dropdown-toggle FilterButton" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">dormitórios</button>
+                                    </div>
+                                </div>
+                                <div class="row py-1 d-flex justify-content-around">
+                                    <div class="col-md-4 mb-2">
+                                        <button class="btn btn-secondary dropdown-toggle FilterButton" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">finalidade</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="form-control" type="text" placeholder="área mínima">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="form-control" type="text" placeholder="área máxima">
+                                    </div>
+                                </div>
+                                <div class="row py-1 d-flex justify-content-around">
+                                    <div class="col-md-4 mt-2">
+                                        <button class="btn btn-secondary dropdown-toggle FilterButton" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">valor mínimo</button>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <button class="btn btn-secondary dropdown-toggle FilterButton" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">valor máximo</button>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <a href="/imoveis" target="_blank">
+                                        <button class="btn btn-secondary" type="button" id="btnBuscar"
+                                            aria-haspopup="true" aria-expanded="false">Buscar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid center-me">
+            <div class="container-fluid py-3 pt-md-5 pb-md-4 mx-auto text-left">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-1"></div>
+                    <div class="col-md-2 py-3" style="margin-left: -5.5%;">
+                        <nobr><label style="font-size:35px; font-weight:600;">Imóveis mais populares</label></nobr>
+                    </div>
+                    <div class="col-md-7"></div>
+                    <div class="col-md-1 py-4 d-flex align-items-center" style="margin-right: -6%;">
+                        <a href="/imoveis" target="_blank">
+                        <button class="btn btn-secondary" type="button" id="btnVejaMais" aria-haspopup="true"
+                            aria-expanded="false">Veja Mais</button>
+                        </a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+            <div class="album py-2">
+                <div class="container">
+                    <div class="row d-flex justify-content-around">
+                        <div class="col-md-4">
+                            <a class="texto-card" href="/imovel" target="_blank">
+                                <div class="card mb-4 box-shadow">
+                                    <img src="/assets/foto_imovel.jpg" class="card-img-top"
+                                        style="height: 225px; width: 100%; display:block" alt="">
+                                    <div class="card-body">
+                                        <p class="card-text" style="font-size: 24px; font-weight:700;">
+                                            Meireles
+                                        </p>
+                                        <p class="card-text">
+                                            Fortaleza
+                                        </p>
+                                        <p class="card-text">
+                                            Apartamento de 85m² Meireles - Fortaleza à venda
+                                        </p>
+                                        <p class="card-text" style="font-size: 24px;">
+                                            R$500.000
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="texto-card" href="/imovel" target="_blank">
+                                <div class="card mb-4 box-shadow">
+                                    <img src="/assets/foto_imovel.jpg" class="card-img-top"
+                                        style="height: 225px; width: 100%; display:block" alt="">
+                                    <div class="card-body">
+                                        <p class="card-text" style="font-size: 24px; font-weight:700;">
+                                            Meireles
+                                        </p>
+                                        <p class="card-text">
+                                            Fortaleza
+                                        </p>
+                                        <p class="card-text">
+                                            Apartamento de 85m² Meireles - Fortaleza à venda
+                                        </p>
+                                        <p class="card-text" style="font-size: 24px;">
+                                            R$500.000
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="texto-card" href="/imovel" target="_blank">
+                                <div class="card mb-4 box-shadow">
+                                    <img src="/assets/foto_imovel.jpg" class="card-img-top"
+                                        style="height: 225px; width: 100%; display:block" alt="">
+                                    <div class="card-body">
+                                        <p class="card-text" style="font-size: 24px; font-weight:700;">
+                                            Meireles
+                                        </p>
+                                        <p class="card-text">
+                                            Fortaleza
+                                        </p>
+                                        <p class="card-text">
+                                            Apartamento de 85m² Meireles - Fortaleza à venda
+                                        </p>
+                                        <p class="card-text" style="font-size: 24px;">
+                                            R$500.000
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="album py-2">
+                <div class="container">
+                    <div class="row d-flex justify-content-around">
+                        <div class="col-md-4">
+                            <a class="texto-card" href="/imovel" target="_blank">
+                                <div class="card mb-4 box-shadow">
+                                    <img src="/assets/foto_imovel.jpg" class="card-img-top"
+                                        style="height: 225px; width: 100%; display:block" alt="">
+                                    <div class="card-body">
+                                        <p class="card-text" style="font-size: 24px; font-weight:700;">
+                                            Meireles
+                                        </p>
+                                        <p class="card-text">
+                                            Fortaleza
+                                        </p>
+                                        <p class="card-text">
+                                            Apartamento de 85m² Meireles - Fortaleza à venda
+                                        </p>
+                                        <p class="card-text" style="font-size: 24px;">
+                                            R$500.000
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="texto-card" href="/imovel" target="_blank">
+                                <div class="card mb-4 box-shadow">
+                                    <img src="/assets/foto_imovel.jpg" class="card-img-top"
+                                        style="height: 225px; width: 100%; display:block" alt="">
+                                    <div class="card-body">
+                                        <p class="card-text" style="font-size: 24px; font-weight:700;">
+                                            Meireles
+                                        </p>
+                                        <p class="card-text">
+                                            Fortaleza
+                                        </p>
+                                        <p class="card-text">
+                                            Apartamento de 85m² Meireles - Fortaleza à venda
+                                        </p>
+                                        <p class="card-text" style="font-size: 24px;">
+                                            R$500.000
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="texto-card" href="/imovel" target="_blank">
+                                <div class="card mb-4 box-shadow">
+                                    <img src="/assets/foto_imovel.jpg" class="card-img-top"
+                                        style="height: 225px; width: 100%; display:block" alt="">
+                                    <div class="card-body">
+                                        <p class="card-text" style="font-size: 24px; font-weight:700;">
+                                            Meireles
+                                        </p>
+                                        <p class="card-text">
+                                            Fortaleza
+                                        </p>
+                                        <p class="card-text">
+                                            Apartamento de 85m² Meireles - Fortaleza à venda
+                                        </p>
+                                        <p class="card-text" style="font-size: 24px;">
+                                            R$500.000
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5" id="sobre-mim"></div>
+            <div class="container-fluid center-me">
+                <div class="col-md-8 px-5 py-5 pt-md- pb-md-2 mx-auto text-center"
+                    style="border-bottom: 2.5px solid #000;">
+                    <h5 style="font-size: 40px; font-weight: 700;">Sobre Mim</h5>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1 py-5 pt-md-4 pb-md-2 mx-auto">
+                        <img src="/assets/perfil_ihone.png">
+                    </div>
+                    <div class="col-md-4 py-5 pt-md-5 pb-md-2 mx-auto text-left">
+                        <p style="font-size: 20px;">Sou Ihone Araújo - corretora de imóveis a mais de 20 anos em
+                            Fortaleza/Ceará.
+                            Especialista em imóveis de médio e alto padrão, oferecendo assessoria na busca,
+                            acompanhamento, análise de documentação e finalização do negócio.
+                            Para que a sua compra para morar ou investir seja realizada com agilidade e segurança.
+                            <b>Ihone Araújo</b>
+                            CRECI 3267F
+                        </p>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row py-5"></div>
+            </div>
+            <div class="row py-5" id="fale-comigo"></div>
+            <div class="container-fluid center-me">
+                <div class="col-md-8 px-5 py-5 pt-md- pb-md-2 mx-auto text-center"
+                    style="border-bottom: 2.5px solid #000;">
+                    <h5 style="font-size: 40px; font-weight: 700;">Fale Comigo</h5>
+                </div>
+                <br>
+                <br>
+                <div class="row py-3">
+                    <div class="col-md-8 mx-auto">
+                        <div class="form-group">
+                            <label for="NomeCompleto" style="font-size: 20px;">Nome Completo:</label>
+                            <input type="text" class="form-control" id="NomeCompleto" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-md-8 mx-auto">
+                        <div class="form-group">
+                            <label for="EnderecoEmail" style="font-size: 20px;">Endereço de Email:</label>
+                            <input type="email" class="form-control" id="EnderecoEmail" placeholder="nome@exemplo.com">
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-md-8 mx-auto">
+                        <div class="form-group">
+                            <label for="Telefone" style="font-size: 20px;">Telefone:</label>
+                            <input type="text" class="form-control" id="Telefone" placeholder="(00) 00000-0000">
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-md-8 mx-auto">
+                        <div class="form-group">
+                            <label for="NomeCompleto" style="font-size: 20px;">Sua Mensagem:</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-5"></div>
+                <a href="https://api.whatsapp.com/send?phone=5585991218289&text=Texto%20aqui" target="_blank"
+                    style="position:fixed;bottom:20px;right:30px;">
+                    <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512"
+                        xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z"
+                            fill="#4CAF50" />
+                        <path
+                            d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z"
+                            fill="#FAFAFA" />
+                    </svg>
+                </a>
+                <div class="row py-5"></div>
+            </div>
+        </div>
+            <%- include ('./../elements/footer.ejs') %>
+    </body>
