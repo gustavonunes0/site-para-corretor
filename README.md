@@ -66,19 +66,8 @@ $ node index
 
 ```
 
-### Autores
+### Autor
 ---
-
-<a href="https://github.com/CaioLuColaco">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/92800332?v=4" width="100px;" alt=""/>
- <br />
- <sub><b>Caio Lucena Colaço</b></sub></a> <a href="https://www.instagram.com/caio_colaco/" title="Contato">👽</a>
-
-
-Feito por Caio Lucena Colaço 👋🏽 Entre em contato!
-
-[![Linkedin Badge](https://img.shields.io/badge/-CaioLucenaColaco-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/caiolucenacolaco/)](https://www.linkedin.com/in/caiolucenacolaco/) 
-[![Gmail Badge](https://img.shields.io/badge/-caio.lcolaco@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:caio.lcolaco@gmail.com)](mailto:caio.lcolaco@gmail.com)
 
 <a href="https://github.com/gustavonunes0">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/108197715?v=4" width="100px;" alt=""/>
